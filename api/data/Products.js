@@ -1,4 +1,6 @@
+// Définition de la liste des produits disponibles dans la boutique
 const products = [
+  // produit 1
     {
         name: "Lorem anim anim",
         image:
@@ -6,11 +8,11 @@ const products = [
         description:
           "Velit fugiat deserunt veniam adipisicing ad adipisicing proident occaecat enim. Ut irure aliquip tempor veniam pariatur incididunt adipisicing consequat excepteur tempor eiusmod tempor. Occaecat eu velit velit ad nulla commodo commodo dolor consectetur proident reprehenderit sint. Deserunt excepteur incididunt duis voluptate est amet velit incididunt cupidatat excepteur aute. Commodo ea amet ipsum adipisicing amet est nostrud consequat eiusmod non ullamco. Duis amet sint aliqua adipisicing labore mollit.",
         price: 98,
-        countInStock: 4,
-        rating: 4.5,
-        numReview: 6,
+        countInStock: 4, // Nombre d'unités en stock
+        rating: 4.5, // Note moyenne du produit
+        numReview: 6, // Nombre d'avis des utilisateurs
       },
-    
+    // produit 2
       {
         
         name: "Lorem anim anim",
@@ -19,11 +21,11 @@ const products = [
         description:
           "Velit fugiat deserunt veniam adipisicing ad adipisicing proident occaecat enim. Ut irure aliquip tempor veniam pariatur incididunt adipisicing consequat excepteur tempor eiusmod tempor. Occaecat eu velit velit ad nulla commodo commodo dolor consectetur proident reprehenderit sint. Deserunt excepteur incididunt duis voluptate est amet velit incididunt cupidatat excepteur aute. Commodo ea amet ipsum adipisicing amet est nostrud consequat eiusmod non ullamco. Duis amet sint aliqua adipisicing labore mollit.",
         price: 98,
-        countInStock: 0,
-        rating: 4,
-        numReview: 6,
+        countInStock: 0, // Nombre d'unités en stock
+        rating: 4, // Note moyenne du produit
+        numReview: 6, // Nombre d'avis des utilisateurs
       },
-    
+    // produit 3
       {
         
         name: "Lorem anim anim",
@@ -32,10 +34,11 @@ const products = [
         description:
           "Velit fugiat deserunt veniam adipisicing ad adipisicing proident occaecat enim. Ut irure aliquip tempor veniam pariatur incididunt adipisicing consequat excepteur tempor eiusmod tempor. Occaecat eu velit velit ad nulla commodo commodo dolor consectetur proident reprehenderit sint. Deserunt excepteur incididunt duis voluptate est amet velit incididunt cupidatat excepteur aute. Commodo ea amet ipsum adipisicing amet est nostrud consequat eiusmod non ullamco. Duis amet sint aliqua adipisicing labore mollit.",
         price: 98,
-        countInStock: 4,
-        rating: 4,
-        numReview: 6,
+        countInStock: 4, // Nombre d'unités en stock
+        rating: 4, // Note moyenne du produit
+        numReview: 6, // Nombre d'avis des utilisateurs
       },
+      // produit 4
       {
         
         name: "Lorem anim anim",
@@ -44,10 +47,11 @@ const products = [
         description:
           "Velit fugiat deserunt veniam adipisicing ad adipisicing proident occaecat enim. Ut irure aliquip tempor veniam pariatur incididunt adipisicing consequat excepteur tempor eiusmod tempor. Occaecat eu velit velit ad nulla commodo commodo dolor consectetur proident reprehenderit sint. Deserunt excepteur incididunt duis voluptate est amet velit incididunt cupidatat excepteur aute. Commodo ea amet ipsum adipisicing amet est nostrud consequat eiusmod non ullamco. Duis amet sint aliqua adipisicing labore mollit.",
         price: 98,
-        countInStock: 4,
-        rating: 4,
-        numReview: 6,
+        countInStock: 4, // Nombre d'unités en stock
+        rating: 4, // Note moyenne du produit
+        numReview: 6, // Nombre d'avis des utilisateurs
       },
+      // produit 5
       {
         
         name: "Lorem anim anim",
@@ -56,10 +60,11 @@ const products = [
         description:
           "Velit fugiat deserunt veniam adipisicing ad adipisicing proident occaecat enim. Ut irure aliquip tempor veniam pariatur incididunt adipisicing consequat excepteur tempor eiusmod tempor. Occaecat eu velit velit ad nulla commodo commodo dolor consectetur proident reprehenderit sint. Deserunt excepteur incididunt duis voluptate est amet velit incididunt cupidatat excepteur aute. Commodo ea amet ipsum adipisicing amet est nostrud consequat eiusmod non ullamco. Duis amet sint aliqua adipisicing labore mollit.",
         price: 98,
-        countInStock: 4,
-        rating: 4,
-        numReview: 6,
+        countInStock: 4, // Nombre d'unités en stock
+        rating: 4, // Note moyenne du produit
+        numReview: 6, // Nombre d'avis des utilisateurs
       },
+      // produit 6
       {
         
         name: "Lorem anim anim",
@@ -68,10 +73,11 @@ const products = [
         description:
           "Velit fugiat deserunt veniam adipisicing ad adipisicing proident occaecat enim. Ut irure aliquip tempor veniam pariatur incididunt adipisicing consequat excepteur tempor eiusmod tempor. Occaecat eu velit velit ad nulla commodo commodo dolor consectetur proident reprehenderit sint. Deserunt excepteur incididunt duis voluptate est amet velit incididunt cupidatat excepteur aute. Commodo ea amet ipsum adipisicing amet est nostrud consequat eiusmod non ullamco. Duis amet sint aliqua adipisicing labore mollit.",
         price: 98,
-        countInStock: 4,
-        rating: 4,
-        numReview: 6,
+        countInStock: 4, // Nombre d'unités en stock
+        rating: 4, // Note moyenne du produit
+        numReview: 6, // Nombre d'avis des utilisateurs
       },
+      // produit 7
       {
         
         name: "Lorem anim anim",
@@ -80,10 +86,11 @@ const products = [
         description:
           "Velit fugiat deserunt veniam adipisicing ad adipisicing proident occaecat enim. Ut irure aliquip tempor veniam pariatur incididunt adipisicing consequat excepteur tempor eiusmod tempor. Occaecat eu velit velit ad nulla commodo commodo dolor consectetur proident reprehenderit sint. Deserunt excepteur incididunt duis voluptate est amet velit incididunt cupidatat excepteur aute. Commodo ea amet ipsum adipisicing amet est nostrud consequat eiusmod non ullamco. Duis amet sint aliqua adipisicing labore mollit.",
         price: 98,
-        countInStock: 4,
-        rating: 4,
-        numReview: 6,
+        countInStock: 4, // Nombre d'unités en stock
+        rating: 4, // Note moyenne du produit
+        numReview: 6, // Nombre d'avis des utilisateurs
       },
+      // produit 8
       {
         
         name: "Lorem anim anim",
@@ -92,10 +99,11 @@ const products = [
         description:
           "Velit fugiat deserunt veniam adipisicing ad adipisicing proident occaecat enim. Ut irure aliquip tempor veniam pariatur incididunt adipisicing consequat excepteur tempor eiusmod tempor. Occaecat eu velit velit ad nulla commodo commodo dolor consectetur proident reprehenderit sint. Deserunt excepteur incididunt duis voluptate est amet velit incididunt cupidatat excepteur aute. Commodo ea amet ipsum adipisicing amet est nostrud consequat eiusmod non ullamco. Duis amet sint aliqua adipisicing labore mollit.",
         price: 98,
-        countInStock: 4,
-        rating: 4,
-        numReview: 6,
+        countInStock: 4, // Nombre d'unités en stock
+        rating: 4, // Note moyenne du produit
+        numReview: 6, // Nombre d'avis des utilisateurs
       },
+      // produit 9
       {
         
         name: "Lorem anim anim",
@@ -104,11 +112,11 @@ const products = [
         description:
           "Velit fugiat deserunt veniam adipisicing ad adipisicing proident occaecat enim. Ut irure aliquip tempor veniam pariatur incididunt adipisicing consequat excepteur tempor eiusmod tempor. Occaecat eu velit velit ad nulla commodo commodo dolor consectetur proident reprehenderit sint. Deserunt excepteur incididunt duis voluptate est amet velit incididunt cupidatat excepteur aute. Commodo ea amet ipsum adipisicing amet est nostrud consequat eiusmod non ullamco. Duis amet sint aliqua adipisicing labore mollit.",
         price: 98,
-        countInStock: 4,
-        rating: 4,
-        numReview: 6,
+        countInStock: 4, // Nombre d'unités en stock
+        rating: 4, // Note moyenne du produit
+        numReview: 6, // Nombre d'avis des utilisateurs
       },
-    
+    // produit 10
       {
         
         name: "Lorem anim anim",
@@ -117,10 +125,11 @@ const products = [
         description:
           "Velit fugiat deserunt veniam adipisicing ad adipisicing proident occaecat enim. Ut irure aliquip tempor veniam pariatur incididunt adipisicing consequat excepteur tempor eiusmod tempor. Occaecat eu velit velit ad nulla commodo commodo dolor consectetur proident reprehenderit sint. Deserunt excepteur incididunt duis voluptate est amet velit incididunt cupidatat excepteur aute. Commodo ea amet ipsum adipisicing amet est nostrud consequat eiusmod non ullamco. Duis amet sint aliqua adipisicing labore mollit.",
         price: 98,
-        countInStock: 4,
-        rating: 4,
-        numReview: 6,
+        countInStock: 4, // Nombre d'unités en stock
+        rating: 4, // Note moyenne du produit
+        numReview: 6, // Nombre d'avis des utilisateurs
       },
+      // produit 11
       {
         
         name: "Lorem anim anim",
@@ -129,10 +138,11 @@ const products = [
         description:
           "Velit fugiat deserunt veniam adipisicing ad adipisicing proident occaecat enim. Ut irure aliquip tempor veniam pariatur incididunt adipisicing consequat excepteur tempor eiusmod tempor. Occaecat eu velit velit ad nulla commodo commodo dolor consectetur proident reprehenderit sint. Deserunt excepteur incididunt duis voluptate est amet velit incididunt cupidatat excepteur aute. Commodo ea amet ipsum adipisicing amet est nostrud consequat eiusmod non ullamco. Duis amet sint aliqua adipisicing labore mollit.",
         price: 98,
-        countInStock: 4,
-        rating: 4,
-        numReview: 6,
+        countInStock: 4, // Nombre d'unités en stock
+        rating: 4, // Note moyenne du produit
+        numReview: 6, // Nombre d'avis des utilisateurs
       },
+      // produit 12
       {
         
         name: "Lorem anim anim",
@@ -141,10 +151,11 @@ const products = [
         description:
           "Velit fugiat deserunt veniam adipisicing ad adipisicing proident occaecat enim. Ut irure aliquip tempor veniam pariatur incididunt adipisicing consequat excepteur tempor eiusmod tempor. Occaecat eu velit velit ad nulla commodo commodo dolor consectetur proident reprehenderit sint. Deserunt excepteur incididunt duis voluptate est amet velit incididunt cupidatat excepteur aute. Commodo ea amet ipsum adipisicing amet est nostrud consequat eiusmod non ullamco. Duis amet sint aliqua adipisicing labore mollit.",
         price: 98,
-        countInStock: 4,
-        rating: 4,
-        numReview: 6,
+        countInStock: 4, // Nombre d'unités en stock
+        rating: 4, // Note moyenne du produit
+        numReview: 6, // Nombre d'avis des utilisateurs
       },
+      // produit 13
       {
         
         name: "Lorem anim anim",
@@ -153,10 +164,11 @@ const products = [
         description:
           "Velit fugiat deserunt veniam adipisicing ad adipisicing proident occaecat enim. Ut irure aliquip tempor veniam pariatur incididunt adipisicing consequat excepteur tempor eiusmod tempor. Occaecat eu velit velit ad nulla commodo commodo dolor consectetur proident reprehenderit sint. Deserunt excepteur incididunt duis voluptate est amet velit incididunt cupidatat excepteur aute. Commodo ea amet ipsum adipisicing amet est nostrud consequat eiusmod non ullamco. Duis amet sint aliqua adipisicing labore mollit.",
         price: 98,
-        countInStock: 4,
-        rating: 4,
-        numReview: 6,
+        countInStock: 4, // Nombre d'unités en stock
+        rating: 4, // Note moyenne du produit
+        numReview: 6, // Nombre d'avis des utilisateurs
       },
+      // produit 14
       {
         
         name: "Lorem anim anim",
@@ -165,10 +177,11 @@ const products = [
         description:
           "Velit fugiat deserunt veniam adipisicing ad adipisicing proident occaecat enim. Ut irure aliquip tempor veniam pariatur incididunt adipisicing consequat excepteur tempor eiusmod tempor. Occaecat eu velit velit ad nulla commodo commodo dolor consectetur proident reprehenderit sint. Deserunt excepteur incididunt duis voluptate est amet velit incididunt cupidatat excepteur aute. Commodo ea amet ipsum adipisicing amet est nostrud consequat eiusmod non ullamco. Duis amet sint aliqua adipisicing labore mollit.",
         price: 98,
-        countInStock: 4,
-        rating: 4,
-        numReview: 6,
+        countInStock: 4, // Nombre d'unités en stock
+        rating: 4, // Note moyenne du produit
+        numReview: 6, // Nombre d'avis des utilisateurs
       },
+      // produit 15
       {
         
         name: "Lorem anim anim",
@@ -177,10 +190,11 @@ const products = [
         description:
           "Velit fugiat deserunt veniam adipisicing ad adipisicing proident occaecat enim. Ut irure aliquip tempor veniam pariatur incididunt adipisicing consequat excepteur tempor eiusmod tempor. Occaecat eu velit velit ad nulla commodo commodo dolor consectetur proident reprehenderit sint. Deserunt excepteur incididunt duis voluptate est amet velit incididunt cupidatat excepteur aute. Commodo ea amet ipsum adipisicing amet est nostrud consequat eiusmod non ullamco. Duis amet sint aliqua adipisicing labore mollit.",
         price: 98,
-        countInStock: 4,
-        rating: 4,
-        numReview: 6,
+        countInStock: 4, // Nombre d'unités en stock
+        rating: 4, // Note moyenne du produit
+        numReview: 6, // Nombre d'avis des utilisateurs
       },
+      // produit 16
       {
         
         name: "Lorem anim anim",
@@ -189,10 +203,10 @@ const products = [
         description:
           "Velit fugiat deserunt veniam adipisicing ad adipisicing proident occaecat enim. Ut irure aliquip tempor veniam pariatur incididunt adipisicing consequat excepteur tempor eiusmod tempor. Occaecat eu velit velit ad nulla commodo commodo dolor consectetur proident reprehenderit sint. Deserunt excepteur incididunt duis voluptate est amet velit incididunt cupidatat excepteur aute. Commodo ea amet ipsum adipisicing amet est nostrud consequat eiusmod non ullamco. Duis amet sint aliqua adipisicing labore mollit.",
         price: 98,
-        countInStock: 4,
-        rating: 4,
-        numReview: 6,
+        countInStock: 4, // Nombre d'unités en stock
+        rating: 4, // Note moyenne du produit
+        numReview: 6, // Nombre d'avis des utilisateurs
       },
 ]
-
+// Exportation de la liste des produits pour une utilisation dans d'autres modules
 module.exports = products;
