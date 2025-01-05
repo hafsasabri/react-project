@@ -1,28 +1,56 @@
-// Importation des modules nécessaires
-const express = require("express"); // Framework Express pour gérer les routes et les middlewares
-const app = express(); // Initialisation de l'application Express
-const PORT = process.env.PORT || 3000; // Récupère le port de l'application à partir des variables d'environnement
-const morgan = require("morgan");
-const bodyParser = require('body-parser');
-const mongoose = require("mongoose"); // MongoDB pour gérer la base de données NoSQL
-const dotenv = require("dotenv"); // Module pour gérer les variables d'environnement
-dotenv.config(); // Charge les variables d'environnement définies dans le fichier .env
-const routes = require('./routes');
+const express = require("express");
+const app = express();
+const dotenv = require("dotenv");
+const products = require("./data/Products");
+dotenv.config();
+const PORT = process.env.PORT;
+const cors = require("cors")
+const mongoose = require("mongoose");
 
-// Connexion à la base de données MongoDB
+
+//connect db
 mongoose
-  .connect(process.env.MONGODB_URL) // Utilise l'URL de connexion MongoDB définie dans le fichier .env
-  .then(() => console.log("db connected")) // Message de confirmation si la connexion réussit
-  .catch((err) => console.log('DataBase Error : ', err)); // Gère l'erreur s'il y en a une, mais cela semble incorrect ici (probablement une faute de syntaxe)
+  .connect(process.env.MONGODB_URL)
+  .then(() => console.log("db connected"))
+  .then((err) => {
+    err;
+  });
 
-app.use(morgan("combined"));
+const databaseSeeder = require("./databaseSeeder");
+const userRoute = require("./routes/User");
+const productRoute = require("./routes/Product");
+const orderRoute = require("./routes/Order");
 
-// support parsing of application/json type post data
-app.use(bodyParser.json());
+app.use(express.json())
 
-app.use('/api', routes);
+app.use(cors())
 
-// Lancement du serveur et écoute des requêtes HTTP sur le port spécifié
-app.listen(PORT, () => {
-    console.log(`server listening on port ${PORT}`); // Message de confirmation du démarrage du serveur
+//database seeder routes
+app.use("/api/seed", databaseSeeder);
+
+//routes for users
+app.use("/api/users", userRoute);
+
+//routes for products
+app.use("/api/products", productRoute);
+
+//routes for orders
+app.use("/api/orders", orderRoute);
+
+// paypal payment api for client key;
+app.use("/api/config/paypal", (req, res) => {
+  res.send(process.env.PAYPAL_CLIENT_ID);
 });
+
+app.listen(PORT || 9000, () => {
+  console.log(`server listening on port ${PORT}`);
+});
+
+
+
+
+
+
+
+
+
